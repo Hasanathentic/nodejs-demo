@@ -27,7 +27,7 @@ pipeline {
         }
         stage('run image') {
             steps{
-                sh 'sh 'docker run -dp 3001:3001 hasan9494/nodeapp'
+                sh'docker run -dp 3001:3001 hasan9494/nodeapp'
             }
         }   
 }
