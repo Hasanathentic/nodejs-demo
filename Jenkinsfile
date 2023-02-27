@@ -12,7 +12,7 @@ pipeline {
 
         stage('Build docker image') {
             steps {  
-                sh 'docker build -t valaxy/nodeapp:latest .'
+                sh 'docker build -t hasan9494/nodeapp:latest .'
             }
         }
         stage('login to dockerhub') {
