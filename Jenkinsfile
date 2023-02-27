@@ -1,7 +1,7 @@
 pipeline {
     agent any 
     environment {
-    DOCKERHUB_CREDENTIALS = credentials('valaxy-dockerhub')
+    DOCKERHUB_CREDENTIALS = credentials('dckr_pat_bkORQzlb1DWm5cAmdSFIunRh2Ho')
     }
     stages { 
         stage('SCM Checkout') {
