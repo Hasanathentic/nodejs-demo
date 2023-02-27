@@ -30,7 +30,7 @@ pipeline {
                 sh 'docker run -t -d name nodeapp:latest -p 8080:3000'
             }
 }
-post {
+  post {
         always {
             sh 'docker logout'
                 }
