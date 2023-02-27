@@ -1,7 +1,7 @@
 pipeline {
     agent any 
     environment {
-    DOCKERHUB_CREDENTIALS = credentials('dckr_pat_bkORQzlb1DWm5cAmdSFIunRh2Ho')
+    DOCKERHUB_CREDENTIALS = credentials('ubuntu')
     }
     stages { 
         stage('SCM Checkout') {
