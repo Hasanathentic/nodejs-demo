@@ -27,7 +27,7 @@ pipeline {
         }
         stage('run image') {
             steps{
-                sh 'docker run -t -d name hasan9494/nodeapp:latest -p 8080:8080'
+                sh 'sh 'docker run -dp 3001:3001 hasan9494/nodeapp'
             }
         }   
 }
