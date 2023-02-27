@@ -25,6 +25,9 @@ pipeline {
                 sh 'docker push hasan9494/nodeapp:latest'
             }
         }
+        stage('run image') {
+            steps{
+                sh 'docker run -t -d name nodeapp:latest -p 8080:3000'
 }
 post {
         always {
