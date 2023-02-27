@@ -22,7 +22,7 @@ pipeline {
         }
         stage('push image') {
             steps{
-                sh 'docker push valaxy/nodeapp:12'
+                sh 'docker push hasan9494/nodeapp:12'
             }
         }
 }
