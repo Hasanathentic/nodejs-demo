@@ -29,6 +29,7 @@ pipeline {
             steps{
                 sh 'docker run -t -d name nodeapp:latest -p 8080:3000'
             }
+        }   
 }
 post {
         always {
