@@ -1,6 +1,4 @@
 FROM node:latest
-WORKDIR /usr/src/app
-COPY nodeapp/* /
-RUN npm install
+ADD ./NODEAPP/* /usr/share/app/test
 EXPOSE 3000
-CMD [ "npm","start" ]
+WORKDIR /usr/share/app/test
