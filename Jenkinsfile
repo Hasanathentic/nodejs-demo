@@ -6,7 +6,7 @@ pipeline {
     stages { 
         stage('SCM Checkout') {
             steps{
-            git 'git@github.com:Hasanathentic/nodejs-demo.git'
+            git 'https://github.com/Hasanathentic/nodejs-demo.git'
             }
         }
 
