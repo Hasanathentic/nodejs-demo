@@ -30,9 +30,11 @@ pipeline {
                 sh'docker run -d -t --name node-8 -p 8081:80 hasan9494/nodeapp'
             }
         } 
-        stage('docker stop')
-        steps{
+        stage('docker stop') {
+                  steps{
             sh 'docker stop 0fedb39e3f4f'
+        }
+    }
 }
 post {
         always {
