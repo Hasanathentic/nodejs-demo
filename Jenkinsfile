@@ -27,7 +27,7 @@ pipeline {
         }
         stage('run image') {
             steps{
-                sh'docker run -d -t --name node-12 -p 8081:80 hasan9494/nodeapp'
+                sh'docker run -d -t --name node-2 -p 8081:80 hasan9494/nodeapp'
             }
         }   
 }
