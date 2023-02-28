@@ -9,11 +9,11 @@ pipeline {
             git 'https://github.com/Hasanathentic/nodejs-demo.git'
             }
         }
-        stage('docker stop') {
-                  steps{
-            sh 'docker stop 0fedb39e3f4f'
-        }
-    }
+        stage('stop container') {
+            steps{
+                sh 'sudo docker rm $(sudo docker stop $(sudo docker ps -a | grep "hasan9494/nodeapp" | cut -d " " -f 1))'
+            }
+        }
 
         stage('Build docker image') {
             steps {  
